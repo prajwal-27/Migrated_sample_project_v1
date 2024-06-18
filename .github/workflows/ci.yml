@@ -3,15 +3,6 @@ name: CI
 - push
 - pull_request
 jobs:
-  stages:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Run build
-      run: build
-    - name: Run test
-      run: test
-    - name: Run deploy
-      run: deploy
   build-job:
     runs-on: ubuntu-latest
     steps:
